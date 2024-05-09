@@ -26,10 +26,10 @@ const monkeyText = [
 							                                  a      m      s
 							                               a     h       h     h
 							                                         ;
-							                                      SILENCE
-							                                E      POWER      E
-							                                      L e s s
-							                                         H
+							                                    SILENCE
+							                              E      POWER      E
+							                                    L e s s
+							                                       H
 							                                      (D* RI
 							                                    PPPPIR D PPPPP
 							                                        DRI* RIPIIIII
