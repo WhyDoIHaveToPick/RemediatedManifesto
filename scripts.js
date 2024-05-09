@@ -64,36 +64,22 @@ let typingTimeout; // Variable to store the timeout ID
 
 
 function typeWriter() {
-// Check if we're still typing the current text
-if (index < texts[currentText].length && isTypingActive) {
-element.innerHTML += texts[currentText].charAt(index);
-index++;
-typingTimeout = setTimeout(typeWriter, typingSpeed);
-} else {
-// If we've finished typing the current text
-if (currentText < texts.length - 1) {
-// Move to the next text in the array
-currentText++;
-index = 0;
-// A short delay before starting the next text
-typingTimeout = setTimeout(typeWriter, 500);
-} else if (currentText === texts.length - 1 && index < monkeyText[0].length) {
-// Start typing monkeyText after texts is done
-element.innerHTML += monkeyText[0].charAt(index);
-index++;
-typingTimeout = setTimeout(typeWriter, typingSpeed);
-} else if (currentText === texts.length - 1 && index >= monkeyText[0].length && index < texts_final_type[0].length) {
-// Start typing texts_final_type after monkeyText is done
-element.innerHTML += texts_final_type[0].charAt(index);
-index++;
-typingTimeout = setTimeout(typeWriter, typingSpeed);
-} else {
-// Typing is complete for all texts
-isTypingActive = false;
-// Optionally, you can reset the typewriter or perform other actions here
+    if (index < texts[currentText].length && isTypingActive) {
+        element.innerHTML += texts[currentText].charAt(index);
+        index++;
+        typingTimeout = setTimeout(typeWriter, typingSpeed);
+    } 
+    else {
+        if (currentText === 0) {
+            element = document.getElementById('paragraph');
+            element.style.visibility = 'visible';
+            currentText++;
+            index = 0;
+            typingTimeout = setTimeout(typeWriter, 500); // A short delay before starting the next line
+        }
+    }
 }
-}
-}
+
 
 
 
