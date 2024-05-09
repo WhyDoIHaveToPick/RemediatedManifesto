@@ -64,22 +64,42 @@ let typingTimeout; // Variable to store the timeout ID
 
 
 function typeWriter() {
-    if (index < texts[currentText].length && isTypingActive) {
-        element.innerHTML += texts[currentText].charAt(index);
-        index++;
-        typingTimeout = setTimeout(typeWriter, typingSpeed);
-    } 
-    else {
-        if (currentText === 0) {
-            element = document.getElementById('paragraph');
+    if (currentText < texts.length) {
+        // Typing the header text
+        if (index < texts[currentText].length && isTypingActive) {
+            element.innerHTML += texts[currentText].charAt(index);
+            index++;
+            typingTimeout = setTimeout(typeWriter, typingSpeed);
+        } else {
+            // Finished typing the header, now switch to the paragraph element
+            element = document.getElementById('paragraph'); // Make sure this is the ID of your paragraph element
             element.style.visibility = 'visible';
             currentText++;
             index = 0;
-            typingTimeout = setTimeout(typeWriter, 500); // A short delay before starting the next line
+            typingTimeout = setTimeout(typeWriter, 500); // A short delay before starting the next text
         }
-    }
+    } else if (currentText === texts.length && index < monkeyText[0].length) {
+    // Typing the monkeyText as a paragraph
+        element.innerHTML += monkeyText[0].charAt(index);
+        index++;
+        typingTimeout = setTimeout(typeWriter, typingSpeed);
+    } else if (currentText === texts.length && index === monkeyText[0].length) {
+    // Reset index to start typing texts_final_type
+        index = 0; // Reset index to start typing texts_final_type
+        currentText++; // Increment to indicate monkeyText is done
+        // Ensure the element is still the paragraph element for texts_final_type
+        element = document.getElementById('paragraph');
+        typingTimeout = setTimeout(typeWriter, 500); // A short delay before starting texts_final_type
+    } else if (currentText > texts.length && index < texts_final_type[0].length) {
+        // Typing the texts_final_type as a paragraph after monkeyText is done
+        element.innerHTML += texts_final_type[0].charAt(index);
+        index++;
+        typingTimeout = setTimeout(typeWriter, typingSpeed);
+    } else {
+    // Typing is complete for all texts
+        isTypingActive = false;
 }
-
+}
 
 
 
