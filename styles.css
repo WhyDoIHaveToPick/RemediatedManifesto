@@ -15,7 +15,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-image: src('RemediationBackgroundTypewriter.png'); /* Update the path if the image is in a different directory */
+background-image: url('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/ca002b37eab13afd457e103887561ea3a76835b7/RemediationBackgroundTypewriter.png'); /* Update the path if the image is in a different directory */
 background-size: 100% 100%; /* This will stretch the image to cover the header area */
 background-position: center;
 opacity: 0.1;
