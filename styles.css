@@ -1,0 +1,405 @@
+/*CSS HEADER*/
+.header {
+position: relative; /* Needed for absolute positioning of the pseudo-element */
+padding: 30px;
+text-align: center;
+background: #D1C190; /* Fallback background color */
+color: #C21E56;
+font-size: 30px;
+}
+
+.header::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url('./RemediationBackgroundTypewriter.png'); /* Update the path if the image is in a different directory */
+background-size: 100% 100%; /* This will stretch the image to cover the header area */
+background-position: center;
+opacity: 0.1;
+z-index: 0;
+}
+
+.header::before {
+/* ... other styles ... */
+background-size: contain;
+background-repeat: repeat; /* This will prevent the image from repeating */
+}
+
+
+
+
+.big-caps {
+font-size: 150px; /* Adjust the size as needed */
+text-transform: uppercase; /* Ensures the text is in uppercase */
+font-weight: bold; /* Makes the text bold */
+}
+
+
+/* TYPEWRITER FILE */
+
+/*typewriting*/ 
+.typewriter h1, .typewriter p {
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    border-right: .1em solid black;
+    padding-right: .1em;
+    text-align: center; /* Center the text */
+}
+.typewriter h1 {
+    color: red;     
+}
+.typewriter p {
+    color: black; /* Set paragraph text color to black */
+    visibility: hidden; /* Hide the text initially */
+    white-space: pre-wrap; /* Respect whitespace and newlines */
+    text-align: left; /* Align paragraph text to the left */
+}
+
+/*buttons*/ 
+button {
+    position: fixed; /* Fixed position */
+    bottom: 0px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal position */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Styles for the first button */
+button:first-of-type {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* Styles for the second button */
+button:nth-of-type(2) {
+    position: fixed;
+    bottom: 60px; /* Lower position */
+    left: 60%; /* Further to the right */
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+button:nth-of-type(3) {
+    position: fixed;
+    bottom: 0px; /* Lower position */
+    left: 40%; /* Further to the right */
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+button:nth-of-type(4) {
+    position: fixed;
+    bottom: 0px; /* Lower position */
+    left: 60%; /* Further to the right */
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+button:nth-of-type(5) {
+    position: fixed;
+    bottom: 60px; /* Lower position */
+    left: 40%; /* Further to the right */
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+
+
+
+
+/*FOR THE OOH OOH AH AH */ 
+@keyframes zigzag {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(100px); }
+    30% { transform: translateY(100px); }
+    50% { transform: translateX(-100px); }
+    60% { transform: translateY(-100px); }
+    75% { transform: translateX(100px); }
+    80% { transform: translateY(100px); }
+    100% { transform: translateX(0);}
+    100% { transform: translateY(0);}
+}
+
+@keyframes zigzag-and-rotate {
+    0% { transform: translate(0, 0) rotate(-45deg); }
+    0% { transform: translateX(0) rotate(-45deg); }
+    25% { transform: translateX(100px) rotate(-45deg); }
+    30% { transform: translateY(100px) rotate(-45deg); }
+    50% { transform: translateX(-100px) rotate(-45deg); }
+    55% { transform: translateY(-100px) rotate(-45deg); }
+    75% { transform: translateX(100px) rotate(-45deg); }
+    80% { transform: translateY(100px) rotate(-45deg); }
+    100% { transform: translateX(0) rotate(-45deg); }
+    100% { transform: translateY(0) rotate(-45deg); }
+}
+@keyframes zigzag-and-rotate-2{
+    0% { transform: translate(0, 0) rotate(45deg); }
+    0% { transform: translateX(0) rotate(45deg); }
+    25% { transform: translateX(100px) rotate(45deg); }
+    30% { transform: translateY(100px) rotate(45deg); }
+    50% { transform: translateX(-100px) rotate(45deg); }
+    55% { transform: translateY(-100px) rotate(45deg); }
+    75% { transform: translateX(100px) rotate(45deg); }
+    80% { transform: translateY(100px) rotate(45deg); }
+    100% { transform: translateX(0) rotate(45deg); }
+    100% { transform: translateY(0) rotate(45deg); }
+}
+
+@keyframes zigzag-and-rotate-3{
+    0% { transform: translate(0, 0) rotate(90deg); }
+    0% { transform: translateX(0) rotate(90deg); }
+    25% { transform: translateX(100px) rotate(90deg); }
+    30% { transform: translateY(100px) rotate(90deg); }
+    50% { transform: translateX(-100px) rotate(90deg); }
+    55% { transform: translateY(-100px) rotate(90deg); }
+    75% { transform: translateX(100px) rotate(90deg); }
+    80% { transform: translateY(100px) rotate(90deg); }
+    100% { transform: translateX(0) rotate(90deg); }
+    100% { transform: translateY(0) rotate(90deg); }
+}
+
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes grow {
+    from { font-size: 20px; }
+    to { font-size: 1000px; }
+}
+@keyframes shrink{
+    from { font-size: 15px; }
+    to { font-size: 0px; }
+}
+.growing-word {
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.shrinking-word {
+    animation-name: shrink;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.flashing-text {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Start the animation from the center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the starting position */
+    animation: flash 1s infinite, zigzag 4s infinite;
+    font-size: 2em;
+    font-weight: 700;
+    color: red;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.flashing-text-2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the text -45 degrees */
+    font-size: 2em;
+    font-weight: 700;
+    color: red;
+    animation: flash 1s infinite, zigzag-and-rotate 3s infinite;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flashing-text-3 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotate the text -45 degrees */
+    font-size: 2em;
+    font-weight: 700;
+    color: red;
+    animation: flash 1s infinite, zigzag-and-rotate-2 3s infinite;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flashing-text-4 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(90deg); /* Rotate the text -45 degrees */
+    font-size: 2em;
+    font-weight: 700;
+    color: red;
+    animation: flash 1s infinite, zigzag-and-rotate-3 3s infinite;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flashing-text-5 {
+    position: absolute;
+    top: 60%; /* Center the text vertically */
+    left: 70%; /* Start the animation from the center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the starting position */
+    animation: flash 1s infinite, zigzag 4s infinite;
+    font-size: 2em;
+    font-weight: 700;
+    color: red;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flashing-text-6 {
+    position: absolute;
+    top: 40%; /* Center the text vertically */
+    left: 30%; /* Start the animation from the center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the starting position */
+    animation: flash 1s infinite, zigzag 4s infinite;
+    font-size: 2em;
+    font-weight: 700;
+    color: red;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6 {
+    display: none;
+}
+.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6 {
+    /* Existing styles */
+    animation: flash 1s infinite, zigzag 4s infinite, fadeOut 1s 5s forwards;
+    /* Other styles */
+}
+
+
+#flashing-words-container{
+display: block;
+text-align: center;
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+font-size: 2em; /* This will make it h1 size */
+color: black; /* This will make the text color black */
+}
+.flashing-words-container{
+display: block;
+text-align: center;
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+font-size: 2em; /* This will make it h1 size */
+color: black; /* This will make the text color black */
+}
+
+
+
+
+/*FOR THE MONKEY HEAD */ 
+
+
+.images img {
+display: none;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.images img.fade-in {
+opacity: 1;
+}
+
+.images img.fade-out {
+opacity: 0;
+}
+.images{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.images1 img {
+display: none;
+opacity: 0;
+transition: opacity .1s ease-in-out;
+}
+
+.images1 img.fade-in {
+opacity: .3;
+}
+
+.images1 img.fade-out {
+opacity: 0;
+}
+.images1{
+    margin: 0 auto;
+    width: 50px;
+    display: block;
+
+}
+
+/* Additional styles for background effects */
+html body.red-background {
+background-color: red !important;
+}
+
+html body.white-background {
+background-color: white !important;
+}
+
+
+.white-drip::after {
+content: 'drip';
+color: black;
+font-size: 2em; /* Adjust size as needed */
+/* Center the content */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+    
+
+.black-dot::after {
+content: '.';
+color: red;
+font-size: 2em; /* Adjust size as needed */
+/* Center the content */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
