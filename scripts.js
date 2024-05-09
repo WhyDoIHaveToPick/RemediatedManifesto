@@ -9,7 +9,7 @@ const monkeyText = [
 				   
 							                                         B
 						
-							                     L                   U                     L
+							             L                          U                          L
 			    
 									     			 R		  
 							         P       		         N			         P
@@ -17,7 +17,7 @@ const monkeyText = [
 							                                         S
 							                                       Y O U
 							                                      U Y O Y
-					     				  CHEMICALS         O W U E O Y     THE WHIP SNAPS
+					                    CHEMICALS         O W U E O Y     THE WHIP SNAPS
 							                                      U O Y U     PAIN. BL
 							                            BE(little) Y O U               OOD
 							                   PP                    S                    PP
