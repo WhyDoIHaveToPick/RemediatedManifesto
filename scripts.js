@@ -77,21 +77,20 @@ function typeWriter() {
             // Delay before starting the next text
             typingTimeout = setTimeout(typeWriter, 500);
         }
-    } else {
+    } else if (currentText === texts.length && index < monkeyText[0].length && isTypingActive) {
         // Typing monkeyText after completing texts
-        if (index < monkeyText[0].length && isTypingActive) {
-            element.innerHTML += monkeyText[0].charAt(index);
-            index++;
-            typingTimeout = setTimeout(typeWriter, typingSpeed);
-        } else {
-            // No more text to type
-        	if (index < texts_final_type[0].length && isTypingActive) {
-            element.innerHTML += texts_final_type[0].charAt(index);
-            index++;
-            typingTimeout = setTimeout(typeWriter, typingSpeed);
-        }
+        element.innerHTML += monkeyText[0].charAt(index);
+        index++;
+        typingTimeout = setTimeout(typeWriter, typingSpeed);
+    } else if (currentText === texts.length && index === monkeyText[0].length && index < texts_final_type[0].length && isTypingActive) {
+        // Typing final text after completing monkeyText
+        element.innerHTML += texts_final_type[0].charAt(index);
+        index++;
+        typingTimeout = setTimeout(typeWriter, typingSpeed);
+    } else {
+        // No more text to type
+        isTypingActive = false;
     }
-}
 }
 
 function startTypewriter() {
