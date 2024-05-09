@@ -82,7 +82,7 @@ function typeWriter() {
         element.innerHTML += monkeyText[0].charAt(index);
         index++;
         typingTimeout = setTimeout(typeWriter, typingSpeed);
-    } else if (currentText === texts.length && index === monkeyText[0].length && index < texts_final_type[0].length && isTypingActive) {
+    } else if (currentText === texts.length && index >= monkeyText[0].length && index < texts_final_type[0].length && isTypingActive) {
         // Typing final text after completing monkeyText
         element.innerHTML += texts_final_type[0].charAt(index);
         index++;
