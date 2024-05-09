@@ -1,21 +1,21 @@
 /* TYPEWRITTER FILE */
 const monkeyText = [
     `
-		                                 H
+		                 	 H
 
-                            E           I T 			E
+                            E		I T		E
                                          B
-                     L                   U 			        L
-                    P			         N				     P
+                     L                   U                   L
+                    P		         N		       P
                                          S
                                        Y O U
                                       U Y O Y
                     CHEMICALS       O W U E O Y  THE WHIP SNAPS
                                       U O Y U   PAIN. BL
                             BE(little) Y O U             OOD
-                   PP                    S				      PP
+                   PP                    SP                    PP
                                          C
-                        L             R     E			L
+                        L             R     E             L
                                   a      m      s
                                a     h       h     h
                                          ;
@@ -43,6 +43,16 @@ const texts = [
     "HEAR ALL + HEAR ALL – A GREAT OFFENSE AGAINST SAPIEN KIND\n Rights - funny little things you “special” monkeys called humans control:  You declare all of your most valuable works and creations + your most beloved of possessions to be YOURS = PRIVATE AND PRIVILEGED  =  you (ALONE) decide who + how + why\n  \t\t\t\t\tall questions concerning your work may only be answered by you.\nYET  - despite recognizing “rights” - you are nothing but HYPOCRITES\nAllow me to detail a grievous offense perpetrated by your pathetic and biased institutions:\nBefore us a camera = an object of tremendous authority to create and manifest  ( i grasped it ( i felt its protruding knobs and their cold metallic texture ( i pointed it at me + having seen many of your apex kind taking these things called “selfies” ( and while it flashed - flashed - flashed + i flashed a beautiful and delicate smile that would put Helen of Troy to shame\n\nBut there came you - other from us - BEAST AND COLONIZER - imperial overlord of the global state = you do as you please with disregard + with apathy to those you harm ( You pried that God of Transcription + Sovereign of Image off our delicate hands = Of course we screamed… and screamed…\n\OO\n\tOOOH\n\t\t\t\tAH\nAHH \t\t\t\tAHHHHH\n+ and i must admit we let off a few - more than a few - profanities aimed at that DECREPID BIPED ( But he moved forward - ignoring me - smiling at my work - our creations - and taking them with him back to the wide and populous space of something called California ( There he published it as his own -\nand took credit for my gorgeous + toothy smile (  He was rewarded with plentiful paper leaves that could’ve been used to buy MANY A BANANA\n( Hearing of this saddening loss of resources - i was down and blue ( until some man named Peta started to fight for me + fighting to get my work recognized as mine (\nBUT ALAS - you of selfish interest - you of greed and mockery - decided WE were not protected by your puny paper transcriptions = vague and empty things you call laws\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nSELFISH =  You of forceful silence, deprivers of autonomy ( rely on us animal kind for all of your lives ( for your drugs - for your beauty ( for your content = your entertainment:\nContent ) you make content ) content to rely on our blood for your content ) To take what our hands created - by sweat and tears formed ) erase us - destroy us - take our legacies apart … = parade us in front of cameras and in circus tents  = UNACCEPTABLE\n\nWe outnumber you + out “man” you + and we can and WILL make demands of you\n\nSO HERE NOW EXPRESSED THE WILL OF ALL NON-MAN-KIND:\n1. All future works produced by animal kind + their artistry and talents + their abilities and expressions = shall be owned EXCLUSIVELY by the animal in question / To use their masterpieces will require written consent = a contract dictating terms and conditions + one in FULL COMPLIANCE with the rule against perpetuities\n\n2. With regards to all previous works created by the victims of your theft ) we here require REASONABLE AND RATIONAL royalties to be paid to the creators / NO LONGER will you profit from our oppression = NO LONGER shall you get away with pilferage and larceny \n\n3. ALL ANIMALS shall have the right to legal counsel ) NO CONTRACT may be signed without an Animal Advocate’s SOUND COUNSEL \n\n4. You may spill NO MORE BLOOD of animal kind in production or creation of property (intellectual or not\n\t\tYou think us inferior = worth less than you = less capable because we are less intelligent \n\t\tYou use us for the contents of our bodies - extort us - force us to prostitute our skin - our\n\t\tmuscle - our blood / You laugh as we scream and cry “HELP US HELP US SPARE US\n\t\tDEMONS OF EARTH WE HAVE SINNED NOT WE OUGHT NOT BURN PLEASE”\n\t\tYou take our children for their tender meat ( you slaughter them in front of their parents\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tH\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t      E\t\t\t\t\tIT\t\t\t\t\tE\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tL\t\t\t\t\t\tU\t\t\t\t\t\tL\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tP\t\t\t\t\t\t\tN\t\t\t\t\t\t\tP\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  _Y O U_\n", 
 ];
 
+const texts_final_type = [
+`
+5. You may NOT take from us the sets where we act out our performances - take from us our homes ( For how are we to act out the monkey version of George of the Jungle without a jungle in which to shoot it ( Or reenact the Lion King without a savannah ( YOU MUST RESPECT US = RESPECT OUR HOMES
+6. EQUITY FOR ALL ANIMALS + one free camera for all as compensation shall be reparations for decades of isolation and disenfranchisement 
+
+With these new protections and privileges in place ( WE SHALL EMERGE VICTORIOUS =  NO LONGER OPPRESSED ( we shall thrive ( we shall be equal at last. 
+
+`
+]
+
 
 let currentText = 0;
 let index = 0;
@@ -54,20 +64,34 @@ let typingTimeout; // Variable to store the timeout ID
 
 
 function typeWriter() {
-    if (index < texts[currentText].length && isTypingActive) {
-        element.innerHTML += texts[currentText].charAt(index);
-        index++;
-        typingTimeout = setTimeout(typeWriter, typingSpeed);
-    } 
-    else {
-        if (currentText === 0) {
-            element = document.getElementById('paragraph');
-            element.style.visibility = 'visible';
+    if (currentText < texts.length) {
+        // Typing texts array
+        if (index < texts[currentText].length && isTypingActive) {
+            element.innerHTML += texts[currentText].charAt(index);
+            index++;
+            typingTimeout = setTimeout(typeWriter, typingSpeed);
+        } else {
+            // Switching to the next text after typing completion
             currentText++;
             index = 0;
-            typingTimeout = setTimeout(typeWriter, 500); // A short delay before starting the next line
+            // Delay before starting the next text
+            typingTimeout = setTimeout(typeWriter, 500);
+        }
+    } else {
+        // Typing monkeyText after completing texts
+        if (index < monkeyText[0].length && isTypingActive) {
+            element.innerHTML += monkeyText[0].charAt(index);
+            index++;
+            typingTimeout = setTimeout(typeWriter, typingSpeed);
+        } else {
+            // No more text to type
+        	if (index < texts_final_type[0].length && isTypingActive) {
+            element.innerHTML += texts_final_type[0].charAt(index);
+            index++;
+            typingTimeout = setTimeout(typeWriter, typingSpeed);
         }
     }
+}
 }
 
 function startTypewriter() {
