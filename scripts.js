@@ -1,49 +1,49 @@
 /* TYPEWRITTER FILE */
 const monkeyText = [
     `
-
-    
-									                 	 H
-							
-							                            E		I T		E
-				   
-							                                         B
-						
-							             L                          U                          L
-			    
-									     			 R		  
-							         P       		         N			         P
-		       
-							                                         S
-							                                     Y O U
-							                                  U Y O Y
-					                 CHEMICALS         O W U E O Y     THE WHIP SNAPS
-							                                 U O Y U     PAIN. BL
-							                            BE(little) Y O U               OOD
-							                   PP                    S                    PP
-							                                         C
-							                        L             R     E             L
-							                                  a      m      s
-							                               a     h       h     h
-							                                         ;
-							                                    SILENCE
-							                              E      POWER      E
-							                                    L e s s
-							                                       H
-							                                      (D* RI
-							                                    PPPPIR D PPPPP
-							                                        DRI* RIPIIIII
-							                                       P*  I P PPPP P)
-							
-							
-							
-							                                WE demand sadness befall
-							                                        U.S
-							                                NO                LONGER
-                    
-
-
-    `
+								
+								    
+																	                 	 H
+															
+															                            E		I T		E
+												   
+															                                         B
+														
+															             L                          U                          L
+											    
+																	     			 R		  
+															         P       		         N			         P
+										       
+															                                         S
+															                                     Y O U
+															                                  U Y O Y
+													                 CHEMICALS         O W U E O Y     THE WHIP SNAPS
+															                                 U O Y U     PAIN. BL
+															                            BE(little) Y O U               OOD
+															                   PP                    S                    PP
+															                                         C
+															                        L             R     E             L
+															                                  a      m      s
+															                               a     h       h     h
+															                                         ;
+															                                    SILENCE
+															                              E      POWER      E
+															                                    L e s s
+															                                       H
+															                                      (D* RI
+															                                    PPPPIR D PPPPP
+															                                        DRI* RIPIIIII
+															                                       P*  I P PPPP P)
+															
+															
+															
+															                                WE demand sadness befall
+															                                        U.S
+															                                NO                LONGER
+								                    
+								
+								
+								    `
 ];
 
 const texts = [
