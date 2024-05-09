@@ -51,7 +51,7 @@ const texts_final_type = [
 With these new protections and privileges in place ( WE SHALL EMERGE VICTORIOUS =  NO LONGER OPPRESSED ( we shall thrive ( we shall be equal at last. 
 
 `
-]
+];
 
 
 let currentText = 0;
