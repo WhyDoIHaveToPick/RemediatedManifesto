@@ -68,7 +68,7 @@ button {
     z-index: 1000; /* Ensure it's above other elements */
 }
 
-/* Styles for the first button */
+/* Styles for the first button */Type it
 button:first-of-type {
     position: fixed;
     bottom: 0px;
@@ -78,7 +78,7 @@ button:first-of-type {
 }
 
 /* Styles for the second button */
-button:nth-of-type(2) {
+button:nth-of-type(2) {  /* Speed up */
     position: fixed;
     bottom: 60px; /* Lower position */
     left: 60%; /* Further to the right */
@@ -86,33 +86,45 @@ button:nth-of-type(2) {
     z-index: 1000;
 }
 
-button:nth-of-type(3) {
+button:nth-of-type(3) { /*reset page*/
     position: fixed;
     bottom: 0px; /* Lower position */
-    left: 40%; /* Further to the right */
+    left: 20%; /* Further to the right */
     transform: translateX(-50%);
     z-index: 1000;
 }
 
-button:nth-of-type(4) {
+button:nth-of-type(4) { /* Perform it */
     position: fixed;
     bottom: 0px; /* Lower position */
-    left: 60%; /* Further to the right */
+    left: 80%; /* Further to the right */
     transform: translateX(-50%);
     z-index: 1000;
 }
 
-button:nth-of-type(5) {
+button:nth-of-type(5) { /* Slow down */
     position: fixed;
     bottom: 60px; /* Lower position */
-    left: 40%; /* Further to the right */
+    left: 40%; /* Further to the left */
     transform: translateX(-50%);
     z-index: 1000;
 }
 
+button:nth-of-type(5) { /* Slow down */
+    position: fixed;
+    bottom: 0px; /* Lower position */
+    left: 40%; /* Further to the left */
+    transform: translateX(-50%);
+    z-index: 1000;
+}
 
-
-
+button:nth-of-type(5) { /* Slow down */
+    position: fixed;
+    bottom: 0px; /* Lower position */
+    left: 60%; /* Further to the left */
+    transform: translateX(-50%);
+    z-index: 1000;
+}
 
 /*FOR THE OOH OOH AH AH */ 
 @keyframes zigzag {
