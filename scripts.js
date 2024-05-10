@@ -479,7 +479,7 @@ flashSpeed = 350;
 isTypingActive = true;
 backgroundAlternationComplete = false;
 
-// Clear the header and paragraph elements specifically
+// Clear the text content of the typewriter elements
 const headerElement = document.getElementById('header1');
 const paragraphElement = document.getElementById('paragraph');
 if (headerElement) {
@@ -511,7 +511,7 @@ img.className = ''; // Reset any classes applied to the images
 });
 
 // Stop and reset the audio if it's playing
-if (typeof audio !== 'undefined' && audio) {
+if (audio) {
 audio.pause(); // Stop the audio from playing
 audio.currentTime = 0; // Reset the audio to the beginning
 }
@@ -528,6 +528,12 @@ flashContainer.remove(); // Remove the container element
 
 function playAudio() {
 var audio = new Audio('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/f5da9a52db581e82de10c9c306d9328cf2368c61/Manifesto_Audio.mp3?raw=true');
+	
+if (audio) {
+audio.pause(); // If there's already an audio playing, stop it first
+audio.currentTime = 0;
+}
+
 audio.play();
 }
 
