@@ -525,6 +525,8 @@ isTypingActive = true;
 
 
 
+
+
 function speedUpTyping() {
     typingSpeed /= 2;
     flashSpeed /= 2; // This will double the typing speed
