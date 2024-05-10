@@ -521,20 +521,11 @@ audio.play();
 }
 
 function loadPDF() {
-	    const images = document.querySelectorAll('.images2 img');
-            let delay = 0;
-            let ImageCount = 0;
-            images.forEach((img, index) => {
+	const images = document.querySelectorAll('.images2 img');
+	images.forEach((img) => {
+	img.style.display = 'block'; // This will make each image visible
+	});
 
-            // Fade in the image
-            setTimeout(() => {
-            img.style.display = 'block';
-            }, delay);
-
-            // Increase delay for the fade-in effect
-            delay += 0; // Adjust time for fade-in
-
-       });
 }
 
 
