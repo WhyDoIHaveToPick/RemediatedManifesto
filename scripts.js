@@ -518,9 +518,21 @@ audio.play();
 }
 
 function loadPDF(){
-	var pdfFrame = document.getElementById('pdfFrame');
-	pdfFrame.src = "MANIFESTO.Rivera.pdf";
-	pdfFrame.hidden = false;
+	var firstImage = new Image();
+	firstImage.src = 'MANIFESTO.Rivera.Page1.jpg'; // Set the source path of the first image
+	firstImage.alt = 'First Image';
+	firstImage.style = 'width:100%; max-width:600px;'; // Set any styles as needed
+	
+	// Create the second image element
+	var secondImage = new Image();
+	secondImage.src = 'MANIFESTO.Rivera.Page2.jpg'; // Set the source path of the second image
+	secondImage.alt = 'Second Image';
+	secondImage.style = 'width:100%; max-width:600px;'; // Set any styles as needed
+	
+	// Append the images to the container
+	container.appendChild(firstImage);
+	container.appendChild(secondImage);
+
 }
 
 
