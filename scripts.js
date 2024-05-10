@@ -517,23 +517,29 @@ var audio = new Audio('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/b
 audio.play();
 }
 
-function loadPDF(){
+function loadPDF() {
+	// Get the container element where you want to add the images
+	var container = document.getElementById('imageContainer');
+	
+	// Create the first image element
 	var firstImage = new Image();
-	firstImage.src = 'MANIFESTO.Rivera.Page1.jpg'; // Set the source path of the first image
+	firstImage.src = 'path-to-your-first-image.jpg'; // Set the source path of the first image
 	firstImage.alt = 'First Image';
-	firstImage.style = 'width:100%; max-width:600px;'; // Set any styles as needed
+	firstImage.style.width = '100%';
+	firstImage.style.maxWidth = '600px';
 	
 	// Create the second image element
 	var secondImage = new Image();
-	secondImage.src = 'MANIFESTO.Rivera.Page2.jpg'; // Set the source path of the second image
+	secondImage.src = 'path-to-your-second-image.jpg'; // Set the source path of the second image
 	secondImage.alt = 'Second Image';
-	secondImage.style = 'width:100%; max-width:600px;'; // Set any styles as needed
+	secondImage.style.width = '100%';
+	secondImage.style.maxWidth = '600px';
 	
 	// Append the images to the container
 	container.appendChild(firstImage);
 	container.appendChild(secondImage);
-
 }
+
 
 
 
