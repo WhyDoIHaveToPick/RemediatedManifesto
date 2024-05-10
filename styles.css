@@ -376,16 +376,15 @@ opacity: 0;
 
 }
 
-images2 img {
-display: none;
-opacity: 0;
+.images2 img {
+display: none; /* Images are hidden by default */
+width: 100%; /* Adjust the width as needed */
+max-width: 600px; /* Adjust the max-width as needed */
 }
 
-
-.images2{
-    margin: 0 auto;
-    width: 50px;
-    display: block;
+.images2 {
+margin: 0 auto;
+display: block;
 }
 
 
