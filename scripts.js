@@ -479,27 +479,31 @@ const headerElement = document.getElementById('header1');
 const paragraphElement = document.getElementById('paragraph');
 if (headerElement) {
 headerElement.innerHTML = ''; // Clear the header text
-headerElement.style = ''; // Reset styles
-// Remove specific classes if any were added
-headerElement.classList.remove('some-class');
+headerElement.removeAttribute('style'); // Remove any inline styles
+headerElement.className = ''; // Reset classes
 }
 if (paragraphElement) {
 paragraphElement.innerHTML = ''; // Clear the paragraph text
-paragraphElement.style = ''; // Reset styles
-// Remove specific classes if any were added
-paragraphElement.classList.remove('some-class');
+paragraphElement.removeAttribute('style'); // Remove any inline styles
+paragraphElement.className = ''; // Reset classes
+}
+
+// Clear all timeouts set by showOtherTextAnimations
+const maxTimeout = setTimeout(() => {});
+for (let i = 0; i < maxTimeout; i++) {
+clearTimeout(i);
 }
 
 // Reset styles and classes for all elements that may have been modified
-document.querySelectorAll('*').forEach(el => {
-el.style = ''; // Reset styles
-// Remove specific classes if any were added
-el.classList.remove('big-caps', 'growing-word', 'shrinking-word', 'fade-in', 'fade-out');
+document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
+el.style.display = 'none'; // Hide the element
+el.removeAttribute('style'); // Remove any inline styles
+el.className = ''; // Reset classes
 });
 
-// Specifically handle the visibility of .flashing-text elements
+// Re-hide the specific elements you want hidden
 document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
-el.style.display = 'none'; // Keep these elements hidden
+el.classList.add('hidden'); // Add the 'hidden' class to re-hide the elements
 });
 
 // Reset the document body's background color and remove any classes
@@ -514,6 +518,8 @@ typingSpeed = 100;
 flashSpeed = 350;
 isTypingActive = true;
 }
+
+
 
 
 
