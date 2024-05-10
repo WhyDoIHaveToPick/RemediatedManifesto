@@ -15,7 +15,6 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-image: url('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/065deec1dd0ff3769d4b465a774bd0ae6ee8260b/RemediationBackgroundTypewriter.png'); /* Update the path if the image is in a different directory */
 background-size: 100% 100%; /* This will stretch the image to cover the header area */
 background-position: center;
 opacity: 0.1;
@@ -28,7 +27,20 @@ background-size: contain;
 background-repeat: repeat; /* This will prevent the image from repeating */
 }
 
+.header-image {
+position: absolute;
+top: 0; /* Adjust these values as needed */
+left: 0;
+width: 100%; /* This will make the image stretch to the full container width */
+height: auto; /* This will maintain the image aspect ratio */
+z-index: -1; /* This will ensure the image stays behind the other content */
+}
 
+.header-image::before {
+/* ... other styles ... */
+background-size: contain;
+background-repeat: repeat; /* This will prevent the image from repeating */
+}
 
 
 .big-caps {
