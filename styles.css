@@ -17,7 +17,6 @@ left: 0;
 width: 100%; /* This will make the image stretch to the full container width */
 height: auto; /* This will maintain the image aspect ratio */
 z-index: -1; /* This will ensure the image stays behind the other content */
-opacity: 30%;
 }
 
 
