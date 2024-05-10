@@ -526,14 +526,14 @@ function loadPDF() {
 	firstImage.src = 'https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/d65a33f000521900d2c6847b9feed6c873a46f29/MANIFESTO.Rivera.Page1.jpg'; // Set the source path of the first image
 	firstImage.alt = 'First Image';
 	firstImage.style.width = '100%';
-	firstImage.style.maxWidth = '1500px';
+	firstImage.style.maxWidth = '1000px';
 	
 	// Create the second image element
 	var secondImage = new Image();
 	secondImage.src = 'https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/d65a33f000521900d2c6847b9feed6c873a46f29/MANIFESTO.Rivera.Page2.jpg'; // Set the source path of the second image
 	secondImage.alt = 'Second Image';
 	secondImage.style.width = '100%';
-	secondImage.style.maxWidth = '1500px';
+	secondImage.style.maxWidth = '1000px';
 	
 	// Append the images to the container
 	container.appendChild(firstImage);
