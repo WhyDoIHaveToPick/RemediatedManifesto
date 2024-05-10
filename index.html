@@ -12,6 +12,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
         </style>
+        <audio id="myAudio">
+        <source src="https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/f5da9a52db581e82de10c9c306d9328cf2368c61/Manifesto_Audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
 
 
     </head>
@@ -29,7 +33,7 @@
         <button id="startflash" onclick="flashWords()"> Perform It</button> <!-- New reset button -->
         <button onclick="slowDownTyping()">Slow Down Typing</button> <!-- New button to speed up typing -->
         <button> See It </button> <!-- New button to speed up typing -->
-        <button> Hear It </button> <!-- New button to speed up typing -->
+        <button onclick="document.getElementById('myAudio').play()"> Hear It </button> <!-- New button to speed up typing -->
 
         <div class="typewriter">
         <h1 id="header1"></h1>
