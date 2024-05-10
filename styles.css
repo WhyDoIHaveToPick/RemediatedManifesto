@@ -8,24 +8,7 @@ color: #C21E56;
 font-size: 30px;
 }
 
-.header::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-size: 100% 100%; /* This will stretch the image to cover the header area */
-background-position: center;
-opacity: 0.1;
-z-index: 0;
-}
 
-.header::before {
-/* ... other styles ... */
-background-size: contain;
-background-repeat: repeat; /* This will prevent the image from repeating */
-}
 
 .header-image {
 position: absolute;
@@ -34,6 +17,8 @@ left: 0;
 width: 100%; /* This will make the image stretch to the full container width */
 height: auto; /* This will maintain the image aspect ratio */
 z-index: -1; /* This will ensure the image stays behind the other content */
+opacity: 30%;
+repeat: repeat; 
 }
 
 
