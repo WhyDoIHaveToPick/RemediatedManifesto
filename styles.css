@@ -80,7 +80,7 @@ button:first-of-type {
 /* Styles for the second button */
 button:nth-of-type(2) {  /* Speed up */
     position: fixed;
-    bottom: 60px; /* Lower position */
+    bottom: 60px; /* higher position */
     left: 60%; /* Further to the right */
     transform: translateX(-50%);
     z-index: 1000;
@@ -113,7 +113,7 @@ button:nth-of-type(5) { /* Slow down */
 button:nth-of-type(6) { /* Slow down */
     position: fixed;
     bottom: 0px; /* Lower position */
-    left: 40%; /* Further to the left */
+    left: 30%; /* Further to the left */
     transform: translateX(-50%);
     z-index: 1000;
 }
@@ -121,7 +121,7 @@ button:nth-of-type(6) { /* Slow down */
 button:nth-of-type(7) { /* Slow down */
     position: fixed;
     bottom: 0px; /* Lower position */
-    left: 60%; /* Further to the left */
+    left: 70%; /* Further to the left */
     transform: translateX(-50%);
     z-index: 1000;
 }
