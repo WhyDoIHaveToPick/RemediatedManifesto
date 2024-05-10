@@ -475,11 +475,8 @@ images[0].parentNode.removeChild(images[0]);
 }
 
 // Clear audio
-allAudios.forEach(function(audio) {
 audio.pause(); // Stop the audio from playing
 audio.currentTime = 0; // Reset the audio to the beginning
-});
-allAudios = []; // Clear the references to the audio objects
 
 
 // Clear the header and paragraph elements specifically
@@ -516,12 +513,11 @@ isTypingActive = true;
 }
 
 
-var allAudios = [];
+
 
 function playAudio() {
 var audio = new Audio('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/f5da9a52db581e82de10c9c306d9328cf2368c61/Manifesto_Audio.mp3?raw=true');
 audio.play();
-allAudios.push(audio); // Keep a reference to the audio object
 }
 
 function loadPDF() {
