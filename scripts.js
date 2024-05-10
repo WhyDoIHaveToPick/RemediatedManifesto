@@ -494,11 +494,8 @@ for (let i = 0; i < maxTimeout; i++) {
 clearTimeout(i);
 }
 
-// Reset styles and classes for all elements that may have been modified
-document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
-el.style.display = 'none'; // Hide the element
-el.className = ''; // Reset classes
-});
+// No need to change the display property of .flashing-text elements
+// since they are already set to 'none' in the CSS
 
 // Reset the document body's background color and remove any classes
 document.body.style.backgroundColor = ''; // Set this to your default background color
@@ -512,7 +509,6 @@ typingSpeed = 100;
 flashSpeed = 350;
 isTypingActive = true;
 }
-
 
 
 
