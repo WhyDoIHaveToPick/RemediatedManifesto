@@ -516,21 +516,21 @@ function playAudio() {
 var audio = new Audio('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/f5da9a52db581e82de10c9c306d9328cf2368c61/Manifesto_Audio.mp3?raw=true');
 audio.play();
 }
-/*https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/a9495526b50755ca645e7894d6612deaac7ccb74/*/
+
 function loadPDF() {
 	// Get the container element where you want to add the images
 	var container = document.getElementById('imageContainer');
 	
 	// Create the first image element
 	var firstImage = new Image();
-	firstImage.src = 'MANIFESTO.Rivera.Page1.jpg'; // Set the source path of the first image
+	firstImage.src = 'https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/a9495526b50755ca645e7894d6612deaac7ccb74/MANIFESTO.Rivera.Page1.jpg'; // Set the source path of the first image
 	firstImage.alt = 'First Image';
 	firstImage.style.width = '100%';
 	firstImage.style.maxWidth = '600px';
 	
 	// Create the second image element
 	var secondImage = new Image();
-	secondImage.src = 'MANIFESTO.Rivera.Page2.jpg'; // Set the source path of the second image
+	secondImage.src = 'https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/a9495526b50755ca645e7894d6612deaac7ccb74/MANIFESTO.Rivera.Page2.jpg'; // Set the source path of the second image
 	secondImage.alt = 'Second Image';
 	secondImage.style.width = '100%';
 	secondImage.style.maxWidth = '600px';
