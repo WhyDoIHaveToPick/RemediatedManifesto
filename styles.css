@@ -110,7 +110,7 @@ button:nth-of-type(5) { /* Slow down */
     z-index: 1000;
 }
 
-button:nth-of-type(5) { /* Slow down */
+button:nth-of-type(6) { /* Slow down */
     position: fixed;
     bottom: 0px; /* Lower position */
     left: 40%; /* Further to the left */
@@ -118,7 +118,7 @@ button:nth-of-type(5) { /* Slow down */
     z-index: 1000;
 }
 
-button:nth-of-type(5) { /* Slow down */
+button:nth-of-type(7) { /* Slow down */
     position: fixed;
     bottom: 0px; /* Lower position */
     left: 60%; /* Further to the left */
