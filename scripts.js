@@ -476,10 +476,11 @@ images[0].parentNode.removeChild(images[0]);
 
 // Clear audio
 
-for (var i = 0; i < audio.length; i++) {
-audio[i].pause(); // Stop the audio from playing
-audio[i].currentTime = 0; // Reset the audio to the beginning
-}
+var audios = document.getElementsByTagName('audio');
+for (var i = 0; i < audios.length; i++) {
+audios[i].pause(); // Stop the audio from playing
+audios[i].currentTime = 0; // Reset the audio to the beginning
+
 
 // Clear the header and paragraph elements specifically
 const headerElement = document.getElementById('header1');
