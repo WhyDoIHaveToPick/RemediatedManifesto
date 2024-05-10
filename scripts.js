@@ -474,6 +474,13 @@ for (var i = 0; i < l; i++) {
 images[0].parentNode.removeChild(images[0]);
 }
 
+// Clear audio
+var audios = document.getElementsByTagName('audio');
+for (var i = 0; i < audios.length; i++) {
+audios[i].pause(); // Stop the audio from playing
+audios[i].currentTime = 0; // Reset the audio to the beginning
+}
+
 // Clear the header and paragraph elements specifically
 const headerElement = document.getElementById('header1');
 const paragraphElement = document.getElementById('paragraph');
@@ -493,9 +500,6 @@ const maxTimeout = setTimeout(() => {});
 for (let i = 0; i < maxTimeout; i++) {
 clearTimeout(i);
 }
-
-// No need to change the display property of .flashing-text elements
-// since they are already set to 'none' in the CSS
 
 // Reset the document body's background color and remove any classes
 document.body.style.backgroundColor = ''; // Set this to your default background color
