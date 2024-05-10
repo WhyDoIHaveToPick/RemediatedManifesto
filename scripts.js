@@ -465,48 +465,55 @@ showOtherTextAnimations();
 
 /*resets everything and lets you restart*/ 
 function resetTypewriter() {
-    clearTimeout(typingTimeout); // Clear the timeout for the typewriter
+clearTimeout(typingTimeout); // Clear the timeout for the typewriter
 
-    //clear images 
-    var images = document.getElementsByTagName('img');
-    var l = images.length;
-    for (var i = 0; i < l; i++) {
-        images[0].parentNode.removeChild(images[0]);
-    }
-
-
-    for (var i= document.images.length; i-->0;)
-        document.images[i].parentNode.removeChild(document.images[i]);
-    
-    // Clear the header element specifically
-
-    const headerElement = document.getElementById('header1');
-    if (headerElement) {
-        headerElement.innerHTML = ''; // Clear the header text
-    }
-
-    // Clear all timeouts set by showOtherTextAnimations
-    const maxTimeout = setTimeout(() => {});
-    for (let i = 0; i < maxTimeout; i++) {
-        clearTimeout(i);
-    }
-
-    element.innerHTML = ''; // Clear the text
-    currentText = 0; // Reset the current text index
-    index = 0; // Reset the typing index
-    flashIndex = 0; // Reset the flashing index
-    typingSpeed = 100; // Reset the typing speed
-    flashSpeed = 350; // Reset the flashing speed
-
-    // Hide all elements shown by showOtherTextAnimations
-    const flashingElements = document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6');
-    flashingElements.forEach(el => {
-        el.style.display = 'none'; // Hide the element
-    });
-
-    // Set isTypingActive to true to allow other functions to be started again
-    isTypingActive = true;
+// Clear images
+var images = document.getElementsByTagName('img');
+var l = images.length;
+for (var i = 0; i < l; i++) {
+images[0].parentNode.removeChild(images[0]);
 }
+
+// Clear the header and paragraph elements specifically
+const headerElement = document.getElementById('header1');
+const paragraphElement = document.getElementById('paragraph');
+if (headerElement) {
+headerElement.innerHTML = ''; // Clear the header text
+headerElement.removeAttribute('style'); // Remove any inline styles
+headerElement.className = ''; // Reset classes
+}
+if (paragraphElement) {
+paragraphElement.innerHTML = ''; // Clear the paragraph text
+paragraphElement.removeAttribute('style'); // Remove any inline styles
+paragraphElement.className = ''; // Reset classes
+}
+
+// Clear all timeouts set by showOtherTextAnimations
+const maxTimeout = setTimeout(() => {});
+for (let i = 0; i < maxTimeout; i++) {
+clearTimeout(i);
+}
+
+// Reset styles and classes for all elements that may have been modified
+document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
+el.style.display = 'none'; // Hide the element
+el.removeAttribute('style'); // Remove any inline styles
+el.className = ''; // Reset classes
+});
+
+// Reset the document body's background color and remove any classes
+document.body.style.backgroundColor = ''; // Set this to your default background color
+document.body.className = ''; // Reset classes
+
+// Reset shared state variables
+currentText = 0;
+index = 0;
+flashIndex = 0;
+typingSpeed = 100;
+flashSpeed = 350;
+isTypingActive = true;
+}
+
 
 
 
