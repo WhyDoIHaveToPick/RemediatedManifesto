@@ -523,14 +523,14 @@ function loadPDF() {
 	
 	// Create the first image element
 	var firstImage = new Image();
-	firstImage.src = 'path-to-your-first-image.jpg'; // Set the source path of the first image
+	firstImage.src = 'MANIFESTO.Rivera.Page1.jpg'; // Set the source path of the first image
 	firstImage.alt = 'First Image';
 	firstImage.style.width = '100%';
 	firstImage.style.maxWidth = '600px';
 	
 	// Create the second image element
 	var secondImage = new Image();
-	secondImage.src = 'path-to-your-second-image.jpg'; // Set the source path of the second image
+	secondImage.src = 'MANIFESTO.Rivera.Page2.jpg'; // Set the source path of the second image
 	secondImage.alt = 'Second Image';
 	secondImage.style.width = '100%';
 	secondImage.style.maxWidth = '600px';
