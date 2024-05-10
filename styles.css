@@ -6,17 +6,14 @@ text-align: center;
 background: #D1C190; /* Fallback background color */
 color: #C21E56;
 font-size: 30px;
-opacity: .5;
+opacity:
 }
 
 
 .header::before {
-content:url('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/1ae7a0763bab2005cebf2525ade7080a8aa2867b/RemediationBackgroundTypewriter.png');
-position: absolute;
-top: 0; /* Adjust these values as needed */
-left: 0;
-width: 100%; /* This will make the image stretch to the full container width */
-height: auto; /* This will maintain the image aspect ratio */
+background-image: url('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/1ae7a0763bab2005cebf2525ade7080a8aa2867b/RemediationBackgroundTypewriter.png');
+background-position: center;
+background-repeat: repeat;
 z-index: -1; /* This will ensure the image stays behind the other content */
 }
 
