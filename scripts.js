@@ -519,7 +519,7 @@ audio.play();
 
 function loadPDF(){
 	var pdfFrame = document.getElementById('pdfFrame');
-	pdfFrame.src = "https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/2cfe49241ddb76d2a0fe958fe61cac21b615b3eb/MANIFESTO.Rivera.pdf?raw=true";
+	pdfFrame.src = "MANIFESTO.Rivera.pdf";
 	pdfFrame.hidden = false;
 }
 
