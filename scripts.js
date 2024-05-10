@@ -528,7 +528,7 @@ audio.currentTime = 0; // Reset the audio to the beginning
 
 
 
-
+var audio;
 function playAudio() {
 if (audio) {
 audio.pause(); // If there's already an audio playing, stop it first
