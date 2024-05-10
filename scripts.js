@@ -519,8 +519,10 @@ flashContainer.remove(); // Remove the container element
 
 // Stop and reset the audio if it's playing
 
+if (audio) {
 audio.pause(); // Stop the audio from playing
 audio.currentTime = 0; // Reset the audio to the beginning
+}
 
 }
 
@@ -528,9 +530,11 @@ audio.currentTime = 0; // Reset the audio to the beginning
 
 
 function playAudio() {
-var audio = new Audio('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/f5da9a52db581e82de10c9c306d9328cf2368c61/Manifesto_Audio.mp3?raw=true');
-	
-
+if (audio) {
+audio.pause(); // If there's already an audio playing, stop it first
+audio.currentTime = 0;
+}
+audio = new Audio('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/f5da9a52db581e82de10c9c306d9328cf2368c61/Manifesto_Audio.mp3?raw=true');
 audio.play();
 }
 
