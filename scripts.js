@@ -501,14 +501,17 @@ el.removeAttribute('style'); // Remove any inline styles
 el.className = ''; // Reset classes
 });
 
+
+// Reset the document body's background color and remove any classes
+document.body.style.backgroundColor = ''; // Set this to your default background color
+document.body.className = ''; // Reset classes
+	
 // Re-hide the specific elements you want hidden
 document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
 el.classList.add('hidden'); // Add the 'hidden' class to re-hide the elements
 });
 
-// Reset the document body's background color and remove any classes
-document.body.style.backgroundColor = ''; // Set this to your default background color
-document.body.className = ''; // Reset classes
+
 
 // Reset shared state variables
 currentText = 0;
