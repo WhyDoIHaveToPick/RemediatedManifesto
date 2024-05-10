@@ -10,7 +10,7 @@ opacity: .5;
 }
 
 
-.header:before {
+.header::before {
 content:url('https://github.com/WhyDoIHaveToPick/RemediatedManifesto/blob/1ae7a0763bab2005cebf2525ade7080a8aa2867b/RemediationBackgroundTypewriter.png');
 position: absolute;
 top: 0; /* Adjust these values as needed */
