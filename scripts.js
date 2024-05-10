@@ -117,14 +117,16 @@ function startTypewriter() {
 
 /*For flashing text */
 let texts1 = `HEAR ALL  HEAR ALL   A GREAT OFFENSE AGAINST SAPIEN KIND
-Rights    funny little things you “special” monkeys called humans control  You declare all of your most valuable works and creations  your most beloved of possessions to be YOURS  PRIVATE AND PRIVILEGED    you	ALONE	decide who  how  why 
+
+Rights  funny little things you “special” monkeys called humans control  You declare all of your most valuable works and creations  your most beloved of possessions to be YOURS PRIVATE AND PRIVILEGED you ALONE decide who how why 
   					 all questions concerning your work may only be answered by you
-YET   despite recognizing “rights”  you are nothing but HYPOCRITES 
+	
+YET  despite recognizing “rights” you are nothing but HYPOCRITES 
 Allow me to detail a grievous offense perpetrated by your pathetic and biased institutions 
 Before us a camera  an object of tremendous authority to create and manifest   i grasped it  i felt its protruding knobs and their cold metallic texture  i pointed it at me  having seen many of your apex kind taking these things called “selfies”  and while it flashed  flashed  flashed  i flashed a beautiful and delicate smile that would put Helen of Troy to shame 
 
 
-But there came you  other from us  BEAST AND COLONIZER  imperial overlord of the global state  you do as you please with disregard  with apathy to those you harm  You pried that God of Transcription  Sovereign of Image off our delicate hands  Of course we screamed… and screamed…`;
+But there came you  other from us  BEAST AND COLONIZER  imperial overlord of the global state  you do as you please with disregard  with apathy to those you harm  You pried that God of Transcription Sovereign of Image off our delicate hands  Of course we screamed… and screamed…`;
 let words = texts1.split(' '); // Split the string into an array of words
 let flashIndex = 0; // Separate index for the flashWords function
 
@@ -134,19 +136,20 @@ let flashIndex = 0; // Separate index for the flashWords function
 
 
 const texts2 = `
-1 All future works produced by animal kind  their artistry and talents  their abilities and expressions  shall be owned EXCLUSIVELY by the animal in question  To use their masterpieces will require written consent  a contract dictating terms and conditions one in FULL COMPLIANCE with the rule against perpetuities
+1: All future works produced by animal kind  their artistry and talents their abilities and expressions  shall be owned EXCLUSIVELY by the animal in question To use their masterpieces will require written consent a contract dictating terms and conditions one in FULL COMPLIANCE with the rule against perpetuities
 
-2 With regards to all previous works created by the victims of your theft  we here require REASONABLE AND RATIONAL royalties to be paid to the creators  NO LONGER will you profit from our oppression  NO LONGER shall you get away with pilferage and larceny
+2: With regards to all previous works created by the victims of your theft we here require REASONABLE AND RATIONAL royalties to be paid to the creators NO LONGER will you profit from our oppression NO LONGER shall you get away with pilferage and larceny
 
-3 ALL ANIMALS shall have the right to legal counsel  NO CONTRACT may be signed without an Animal Advocate’s SOUND COUNSEL
+3: ALL ANIMALS shall have the right to legal counsel  NO CONTRACT may be signed without an Animal Advocate’s SOUND COUNSEL
 
-4 You may spill NO MORE BLOOD of animal kind in production or creation of property intellectual or not
+4: You may spill NO MORE BLOOD of animal kind in production or creation of property intellectual or not
 
-You think us inferior  worth less than you  less capable because we are less intelligent  
-You use us for the contents of our bodies  extort us  force us to prostitute our skin  our    
-muscle  our blood  You laugh as we scream and cry “HELP US HELP US SPARE US 
+You think us inferior worth less than you less capable because we are less intelligent  
+You use us for the contents of our bodies extort us force us to prostitute our skin  our    
+muscle our blood You laugh as we scream and cry “HELP US HELP US SPARE US 
 DEMONS OF EARTH WE HAVE SINNED NOT WE OUGHT NOT BURN PLEASE”
-You take our children for their tender meat  you slaughter them in front of their parents
+
+You take our children for their tender meat you slaughter them in front of their parents
 			                       
 `;
 
@@ -154,10 +157,10 @@ You take our children for their tender meat  you slaughter them in front of thei
 const texts3 = `
 We demand sadness befall us  NO LONGER 
 
-5 You may NOT take from us the sets where we act out our performances  take from us our homes  For how are we to act out the monkey version of George of the Jungle without a jungle in which to shoot itn Or reenact the Lion King without a savannah  YOU MUST RESPECT US  RESPECT OUR HOMES
+5 You may NOT take from us the sets where we act out our performances  take from us our homes  For how are we to act out the monkey version of George of the Jungle without a jungle in which to shoot it Or reenact the Lion King without a savannah YOU MUST RESPECT US  RESPECT OUR HOMES
 6 EQUITY FOR ALL ANIMALS  one free camera for all as compensation shall be reparations for decades of isolation and disenfranchisement 
 
-With these new protections and privileges in place  WE SHALL EMERGE VICTORIOUS   NO LONGER OPPRESSED  we shall thrive  we shall be equal at lastn. 
+With these new protections and privileges in place  WE SHALL EMERGE VICTORIOUS   NO LONGER OPPRESSED  we shall thrive  we shall be equal at last. 
 `
 
 
