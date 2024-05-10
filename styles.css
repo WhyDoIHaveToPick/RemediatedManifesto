@@ -415,3 +415,7 @@ transform: translate(-50%, -50%);
   font-weight: 700;
   font-style: normal;
 }
+
+.hidden {
+display: none;
+}
