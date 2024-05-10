@@ -510,17 +510,18 @@ img.style.display = 'none'; // Hide the images
 img.className = ''; // Reset any classes applied to the images
 });
 
-// Stop and reset the audio if it's playing
-if (audio) {
-audio.pause(); // Stop the audio from playing
-audio.currentTime = 0; // Reset the audio to the beginning
-}
 
 // Clear any dynamically created elements like 'flashing-words-container'
 const flashContainer = document.getElementById('flashing-words-container');
 if (flashContainer) {
 flashContainer.remove(); // Remove the container element
 }
+
+// Stop and reset the audio if it's playing
+
+audio.pause(); // Stop the audio from playing
+audio.currentTime = 0; // Reset the audio to the beginning
+
 }
 
 
