@@ -116,9 +116,7 @@ function startTypewriter() {
 }
 
 /*For flashing text */
-let texts1 = `HEAR ALL  HEAR ALL   A GREAT OFFENSE AGAINST SAPIEN KIND
-
-Rights  funny little things you “special” monkeys called humans control  You declare all of your most valuable works and creations  your most beloved of possessions to be YOURS PRIVATE AND PRIVILEGED you ALONE decide who how why 
+let texts1 = `HEAR ALL  HEAR ALL   A GREAT OFFENSE AGAINST SAPIEN KIND Rights  funny little things you “special” monkeys called humans control  You declare all of your most valuable works and creations  your most beloved of possessions to be YOURS PRIVATE AND PRIVILEGED you ALONE decide who how why 
   					 all questions concerning your work may only be answered by you
 	
 YET  despite recognizing “rights” you are nothing but HYPOCRITES 
