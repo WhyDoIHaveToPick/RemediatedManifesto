@@ -36,12 +36,6 @@ height: auto; /* This will maintain the image aspect ratio */
 z-index: -1; /* This will ensure the image stays behind the other content */
 }
 
-.header-image::before {
-/* ... other styles ... */
-background-size: contain;
-background-repeat: repeat; /* This will prevent the image from repeating */
-}
-
 
 .big-caps {
 font-size: 150px; /* Adjust the size as needed */
