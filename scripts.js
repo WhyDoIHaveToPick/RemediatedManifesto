@@ -494,11 +494,13 @@ for (let i = 0; i < maxTimeout; i++) {
 clearTimeout(i);
 }
 
-// Reset styles and classes for all elements that may have been modified
+// Reset styles and classes for all elements except the specified flashing-text divs
 document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
+if (!el.classList.contains('hide')) { // Skip over elements with the 'hide' class
 el.style.display = 'none'; // Hide the element
 el.removeAttribute('style'); // Remove any inline styles
 el.className = ''; // Reset classes
+}
 });
 
 // Reset the document body's background color and remove any classes
