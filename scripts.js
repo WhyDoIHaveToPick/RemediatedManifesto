@@ -479,28 +479,27 @@ const headerElement = document.getElementById('header1');
 const paragraphElement = document.getElementById('paragraph');
 if (headerElement) {
 headerElement.innerHTML = ''; // Clear the header text
-headerElement.removeAttribute('style'); // Remove any inline styles
-headerElement.className = ''; // Reset classes
+headerElement.style = ''; // Reset styles
+// Remove specific classes if any were added
+headerElement.classList.remove('some-class');
 }
 if (paragraphElement) {
 paragraphElement.innerHTML = ''; // Clear the paragraph text
-paragraphElement.removeAttribute('style'); // Remove any inline styles
-paragraphElement.className = ''; // Reset classes
+paragraphElement.style = ''; // Reset styles
+// Remove specific classes if any were added
+paragraphElement.classList.remove('some-class');
 }
 
-// Clear all timeouts set by showOtherTextAnimations
-const maxTimeout = setTimeout(() => {});
-for (let i = 0; i < maxTimeout; i++) {
-clearTimeout(i);
-}
+// Reset styles and classes for all elements that may have been modified
+document.querySelectorAll('*').forEach(el => {
+el.style = ''; // Reset styles
+// Remove specific classes if any were added
+el.classList.remove('big-caps', 'growing-word', 'shrinking-word', 'fade-in', 'fade-out');
+});
 
-// Reset styles and classes for all elements except the specified flashing-text divs
+// Specifically handle the visibility of .flashing-text elements
 document.querySelectorAll('.flashing-text, .flashing-text-2, .flashing-text-3, .flashing-text-4, .flashing-text-5, .flashing-text-6').forEach(el => {
-if (!el.classList.contains('hide')) { // Skip over elements with the 'hide' class
-el.style.display = 'none'; // Hide the element
-el.removeAttribute('style'); // Remove any inline styles
-el.className = ''; // Reset classes
-}
+el.style.display = 'none'; // Keep these elements hidden
 });
 
 // Reset the document body's background color and remove any classes
@@ -515,6 +514,7 @@ typingSpeed = 100;
 flashSpeed = 350;
 isTypingActive = true;
 }
+
 
 
 
