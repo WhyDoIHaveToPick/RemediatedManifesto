@@ -465,19 +465,19 @@ showOtherTextAnimations();
 
 /*resets everything and lets you restart*/ 
 function resetTypewriter() {
-clearTimeout(typingTimeout); // Clear the timeout for the typewriter
+// Clear the timeout for the typewriter
+clearTimeout(typingTimeout);
 
-// Clear images
-var images = document.getElementsByTagName('img');
-var l = images.length;
-for (var i = 0; i < l; i++) {
-images[0].parentNode.removeChild(images[0]);
-}
-
-// Clear audio
-audio.pause(); // Stop the audio from playing
-audio.currentTime = 0; // Reset the audio to the beginning
-
+// Reset shared state variables
+currentText = 0;
+index = 0;
+flashIndex = 0;
+flashIndex2 = 0;
+flashIndex3 = 0;
+typingSpeed = 100;
+flashSpeed = 350;
+isTypingActive = true;
+backgroundAlternationComplete = false;
 
 // Clear the header and paragraph elements specifically
 const headerElement = document.getElementById('header1');
@@ -495,7 +495,7 @@ paragraphElement.className = ''; // Reset classes
 
 // Clear all timeouts set by showOtherTextAnimations
 const maxTimeout = setTimeout(() => {});
-for (let i = 0; i < maxTimeout; i++) {
+for (let i = 0; i <= maxTimeout; i++) {
 clearTimeout(i);
 }
 
@@ -503,13 +503,24 @@ clearTimeout(i);
 document.body.style.backgroundColor = ''; // Set this to your default background color
 document.body.className = ''; // Reset classes
 
-// Reset shared state variables
-currentText = 0;
-index = 0;
-flashIndex = 0;
-typingSpeed = 100;
-flashSpeed = 350;
-isTypingActive = true;
+// Clear images
+const images = document.querySelectorAll('.images img, .images1 img, .images2 img');
+images.forEach((img) => {
+img.style.display = 'none'; // Hide the images
+img.className = ''; // Reset any classes applied to the images
+});
+
+// Stop and reset the audio if it's playing
+if (typeof audio !== 'undefined' && audio) {
+audio.pause(); // Stop the audio from playing
+audio.currentTime = 0; // Reset the audio to the beginning
+}
+
+// Clear any dynamically created elements like 'flashing-words-container'
+const flashContainer = document.getElementById('flashing-words-container');
+if (flashContainer) {
+flashContainer.remove(); // Remove the container element
+}
 }
 
 
