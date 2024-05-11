@@ -56,7 +56,11 @@ const texts_final_type = [
 5. You may NOT take from us the sets where we act out our performances - take from us our homes ( For how are we to act out the monkey version of George of the Jungle without a jungle in which to shoot it ( Or reenact the Lion King without a savannah ( YOU MUST RESPECT US = RESPECT OUR HOMES
 6. EQUITY FOR ALL ANIMALS + one free camera for all as compensation shall be reparations for decades of isolation and disenfranchisement 
 
-With these new protections and privileges in place ( WE SHALL EMERGE VICTORIOUS =  NO LONGER OPPRESSED ( we shall thrive ( we shall be equal at last. 
+With these new protections and privileges in place ( WE SHALL EMERGE VICTORIOUS =  NO LONGER OPPRESSED 
+												     ( we shall thrive
+		 												      WE SHALL BE
+		     												         EQUAL AT
+			    												       LAST.
 
 `
 ];
