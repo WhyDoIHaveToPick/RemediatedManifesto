@@ -138,19 +138,18 @@ let flashIndex = 0; // Separate index for the flashWords function
 
 
 const texts2 = `
-1: All future works produced by animal kind  their artistry and talents their abilities and expressions  shall be owned EXCLUSIVELY by the animal in question To use their masterpieces will require written consent a contract dictating terms and conditions one in FULL COMPLIANCE with the rule against perpetuities
+1: - All future works produced by animal kind  their artistry and talents their abilities and expressions  shall be owned EXCLUSIVELY by the animal in question To use their masterpieces will require written consent a contract dictating terms and conditions one in FULL COMPLIANCE with the rule against perpetuities
 
-2: With regards to all previous works created by the victims of your theft we here require REASONABLE AND RATIONAL royalties to be paid to the creators NO LONGER will you profit from our oppression NO LONGER shall you get away with pilferage and larceny
+2: - With regards to all previous works created by the victims of your theft we here require REASONABLE AND RATIONAL royalties to be paid to the creators NO LONGER will you profit from our oppression NO LONGER shall you get away with pilferage and larceny
 
-3: ALL ANIMALS shall have the right to legal counsel  NO CONTRACT may be signed without an Animal Advocate’s SOUND COUNSEL
+3: - ALL ANIMALS shall have the right to legal counsel  NO CONTRACT may be signed without an Animal Advocate’s SOUND COUNSEL
 
-4: You may spill NO MORE BLOOD of animal kind in production or creation of property intellectual or not
+4: - You may spill NO MORE BLOOD of animal kind in production or creation of property intellectual or not
 
 You think us inferior worth less than you less capable because we are less intelligent  
 You use us for the contents of our bodies extort us force us to prostitute our skin  our    
 muscle our blood You laugh as we scream and cry “HELP US HELP US SPARE US 
-DEMONS OF EARTH WE HAVE SINNED NOT WE OUGHT NOT BURN PLEASE”
-
+DEMONS OF EARTH WE HAVE SINNED NOT WE OUGHT NOT BURN PLEASE” -
 You take our children for their tender meat you slaughter them in front of their parents
 			                       
 `;
@@ -162,7 +161,7 @@ We demand sadness befall us  NO LONGER
 5 You may NOT take from us the sets where we act out our performances  take from us our homes  For how are we to act out the monkey version of George of the Jungle without a jungle in which to shoot it Or reenact the Lion King without a savannah YOU MUST RESPECT US  RESPECT OUR HOMES
 6 EQUITY FOR ALL ANIMALS  one free camera for all as compensation shall be reparations for decades of isolation and disenfranchisement 
 
-With these new protections and privileges in place  WE SHALL EMERGE VICTORIOUS   NO LONGER OPPRESSED  we shall thrive  we shall be equal at last. 
+With these new protections and privileges in place  WE SHALL EMERGE VICTORIOUS   NO LONGER OPPRESSED  we shall thrive  WE SHALL BE EQUAL AT LAST. 
 `
 
 
@@ -295,7 +294,7 @@ img.classList.add('fade-in');
 }, delay);
 
 // Increase delay for the fade-in effect
-delay += 2000; // Adjust time for fade-in
+delay += 1000; // Adjust time for fade-in
 
 // Fade out the image
 setTimeout(() => {
