@@ -418,3 +418,9 @@ transform: translate(-50%, -50%);
 .hidden {
 display: none !important;
 }
+
+.font-for-flashwords{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
