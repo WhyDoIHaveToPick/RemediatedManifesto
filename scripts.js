@@ -205,14 +205,19 @@ element.style.display = "block";
 element.style.textAlign = "center";
 element.style.color = "black";
 element.innerHTML = words2[flashIndex2]; // Show the word from texts2
-
+element.classList.add('font-for-flashwords');
+	
 // Check if the word is in uppercase and add 'big-caps' class
 if (words2[flashIndex2] === words2[flashIndex2].toUpperCase() && words2[flashIndex2] !== words2[flashIndex2].toLowerCase()) {
 element.classList.add('big-caps');
 } else {
 element.classList.remove('big-caps');
 }
-
+if (["We", "we", "us", "Us"].includes(words2[flashIndex2])) {
+element.classList.add('growing-word');
+} else {
+element.classList.remove('growing-word');
+}
 setTimeout(() => {
 if (isTypingActive) {
 element.innerHTML = ''; // Hide the word
@@ -237,7 +242,8 @@ element.style.textAlign = "center";
 element.style.color = "black";
 
 element.innerHTML = words3[flashIndex3]; // Show the word from texts3
-
+element.classList.add('font-for-flashwords');
+	
 // Apply 'big-caps' and 'growing-word' classes conditionally
 if (words3[flashIndex3] === words3[flashIndex3].toUpperCase()) {
 element.classList.add('big-caps');
@@ -391,7 +397,8 @@ function flashWords() {
         // Reset any previous classes
         element.className = '';
         element.style.color = "black";
-
+	element.classList.add('font-for-flashwords');
+	    
     // Apply 'growing-word' class if the word is "We", "we", "us", or "Us"
         if (["We", "we", "us", "Us"].includes(words[flashIndex])) {
             element.classList.add('growing-word');
